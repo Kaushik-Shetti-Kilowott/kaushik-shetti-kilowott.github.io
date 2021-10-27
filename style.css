@@ -1,0 +1,107 @@
+* {box-sizing: border-box;}
+body { 
+  margin: 0;
+  overflow: hidden;
+}
+.header {
+  overflow: hidden;
+  background-color: rgb(226, 73, 73);
+  padding: 20px 10px;
+}
+.header a {
+  float: left;
+  color: white;
+  text-align: center;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 16px; 
+  line-height: 4px;
+  border-radius: 4px;
+}
+.header a.active {
+  color: white;
+}
+.header-left a:hover{
+    color: white;
+}
+.header-left a:focus{
+    color: white;
+}
+.header-left{
+  padding-left: 250px;
+}
+.header-right {
+  float: right;
+}
+
+@media screen and (max-width: 500px) {
+  .header a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+  .header-right {
+    float: none;
+  }
+ 
+}
+.sidenav {
+  height: 83vh;
+  width: 250px;
+  position: fixed;
+  z-index: 1;
+  top: 10;
+  left: 0;
+  background-color:white;
+  overflow-x: hidden;
+  padding-top: 20px;
+  border-color: rgb(228, 77, 77);
+  border-right-style: solid;
+
+}
+.sidenav a {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 16px;
+  color: #818181;
+  display: block;
+  text-align: center;
+  top: 20;
+}
+.sidenav a:hover {
+  color: #dd2f2f;
+}
+.myprofile{
+  background-color: #b3a7a7;
+  height: 82vh;
+  border-left: red;
+}
+.my-self {
+  margin-left: 400px; 
+  font-size: 16px; 
+  padding-top: 50px;
+}
+.my-skills {
+  margin-left: 400px; 
+  font-size: 16px; 
+  padding-top: 50px;
+}
+.my-interest {
+  margin-left: 400px; 
+  font-size: 16px; 
+  padding-top: 50px;
+}
+.my-links {
+  margin-left: 400px; 
+  font-size: 16px; 
+  padding-top: 50px;
+}
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: rgb(224, 48, 48);
+  color: white;
+  text-align: left;
+}
